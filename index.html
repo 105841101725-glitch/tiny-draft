@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST TRACKER</title>
+    <!--
+   ====DISUSUN OLEH KELOMPOK 7 KELAS 2A====
+   1. PRISKA AMALIA NURFADILAH (105841101725)
+   2. MARATUN NAJILAH (105841100725)
+   3. SALSABILA HAERUNNISA
+   4. AIDIL ASMAN 
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Bagian list-->
+    <div class="container">
+      <div class="pixelart-to-css">
+        <div class="Tiny">
+          <h1>TINY</h1>
+          <h2>Time-saving Innovative Notepad for You</h2>
+        </div>
+      </div>
+      <div class="todo-section">
+        <h2>To Do List</h2>
+        <h3>Manage your daily activites with TINY!</h3>
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Tambahkan aktivitas anda"
+          />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" onclick="filterTask('all', this)">
+            Semua
+          </button>
+          <button class="filter-btn" onclick="filterTask('pending', this)">
+            Pending
+          </button>
+          <button class="filter-btn" onclick="filterTask('completed', this)">
+            Selesai
+          </button>
+        </div>
+        <div id="empty-message" class="empty-message"></div>
+        <ul id="list-container">
+          <!--<li class="centang">tugas 1</li>
+            <li>tugas 2</li>
+            <li>tugas 3</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
